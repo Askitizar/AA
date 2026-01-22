@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Social Network Concept</title>
+    <style>
+        body { background-color: #000; color: #fff; }
+        .custom-border { border: 1px solid #333; }
+    </style>
+</head>
+<body class="p-4 font-sans">
+
+    <header class="custom-border rounded-full px-8 py-3 flex justify-between items-center mb-6">
+        <div class="flex gap-8 items-center">
+            <div class="text-2xl font-bold">S</div>
+            <nav class="flex gap-6 text-sm text-gray-400">
+                <a href="#" class="hover:text-white">Main</a>
+                <a href="#" class="hover:text-white">Feed</a>
+                <a href="#" class="hover:text-white">Friends</a>
+                <a href="#" class="hover:text-white">Groups</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="p-2">🔍</button>
+            <button class="p-2">👤</button>
+            <button class="border border-white px-4 py-1 rounded-full text-sm font-bold">LOGIN</button>
+        </div>
+    </header>
+
+    <main class="grid grid-cols-12 gap-6 h-[calc(100vh-200px)]">
+        
+        <aside class="col-span-1 custom-border rounded-3xl flex flex-col items-center py-10 gap-10">
+            <div class="flex flex-col gap-8 opacity-70">
+                <button class="text-2xl">🔲</button>
+                <button class="text-2xl">📋</button>
+                <button class="text-2xl">👥</button>
+                <button class="text-2xl">🏠</button>
+            </div>
+            <button class="mt-auto text-3xl">⏻</button>
+        </aside>
+
+        <section class="col-span-8 space-y-6 overflow-y-auto pr-2">
+            <div class="flex justify-between items-center gap-4">
+                <input type="text" placeholder="Search" class="bg-white text-black rounded-full px-6 py-2 w-full max-w-md">
+                <button class="border border-white px-6 py-2 rounded-full whitespace-nowrap">Create post</button>
+            </div>
+
+            <article class="bg-white text-black rounded-3xl p-4 flex gap-6">
+                <img src="https://via.placeholder.com/300x180" class="rounded-2xl w-1/3 object-cover" alt="Post image">
+                <div class="flex flex-col justify-between py-2">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+                            <span class="text-xs font-bold">Алексей Морозов</span>
+                        </div>
+                        <h2 class="text-xl font-bold mb-2">Красота природы</h2>
+                        <p class="text-sm text-gray-600 leading-snug">Молодой человек стоит у окна, мягкий дневной свет освещает лицо, фон размытый...</p>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <span>❤️ 171</span>
+                        <span>💬 123</span>
+                        <span>🔄 78</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white text-black rounded-3xl p-4 flex gap-6">
+                <img src="https://via.placeholder.com/300x180" class="rounded-2xl w-1/3 object-cover" alt="Post image">
+                <div class="flex flex-col justify-between py-2">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+                            <span class="text-xs font-bold">Дарья Ковалева</span>
+                        </div>
+                        <h2 class="text-xl font-bold mb-2">Вкуснейшее блюдо</h2>
+                        <p class="text-sm text-gray-600 leading-snug">Горячая паста с курицей в сливочном соусе, посыпанная тертым пармезаном...</p>
+                    </div>
+                    <div class="flex gap-6 mt-4">
+                        <span>❤️ 171</span>
+                        <span>💬 123</span>
+                        <span>🔄 78</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside class="col-span-3 space-y-6">
+            <div class="custom-border rounded-3xl p-6">
+                <h3 class="text-center font-bold mb-4">Friends</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="w-8 h-8 bg-gray-600 rounded-full"></div>
+                            <span>Данил Марков</span>
+                        </div>
+                        <button>💬</button>
+                    </div>
+                    </div>
+                <button class="text-[10px] text-gray-500 block mx-auto mt-4">See all</button>
+            </div>
+
+            <div class="custom-border rounded-3xl p-6">
+                <h3 class="text-center font-bold mb-4">Groups</h3>
+                <div class="space-y-4 border border-gray-800 rounded-xl p-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2 text-[10px]">
+                            <div class="w-8 h-8 bg-gray-600 rounded-md"></div>
+                            <div>Страницы<br><span class="text-gray-500">144.190</span></div>
+                        </div>
+                        <button>💬</button>
+                    </div>
+                </div>
+                <button class="text-[10px] text-gray-500 block mx-auto mt-4">See all</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="mt-6 custom-border rounded-full py-3 px-10 flex justify-between items-center text-sm">
+        <div class="text-2xl font-bold">S</div>
+        <div class="text-gray-400">All rights reserved | Name 2025</div>
+        <div class="flex gap-4">
+            <span>Instagram</span>
+            <span>TikTok</span>
+            <span>Telegram</span>
+        </div>
+    </footer>
+
+</body>
+</html>
